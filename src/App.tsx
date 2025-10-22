@@ -20,183 +20,16 @@ const UserProfileCard = () => {
   const [bindDialogContent, setBindDialogContent] = useState<string | null>(null);
 
   return (
-    <GlobalStyle>
-      <RootWrapperNaN>
-      <Frame1000005538>
-        <Frame1000005539>
-          <SectionTitle>
-            <TitleIndicator />
-            <Typography.Title level="h3" style={{ fontSize: "16px" }}>
-              基础信息
-            </Typography.Title>
-          </SectionTitle>
-
-          <UserInfoSection>
-            <Card bordered>
-              <Descriptions column={3} layout="vertical">
-                <Descriptions.DescriptionsItem label="姓名">
-                  李*洋
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="昵称">
-                  张益达
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="实名注册时间">
-                  30-90天
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="证件号">
-                  *************0023
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="证件类型">
-                  身份证
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="年龄范围">
-                  18-30岁
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="微信支付账户/QQ账户">
-                  085e9858e4013c67a5115a89@wx.tenpay.com
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="绑定手机">
-                  15656782568
-                </Descriptions.DescriptionsItem>
-              </Descriptions>
-            </Card>
-
-            <Card bordered style={{ marginTop: 20 }}>
-              <Descriptions column={3} layout="vertical">
-                <Descriptions.DescriptionsItem label="零钱余额">
-                  2***.**
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="零钱通余额">
-                  0.**
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="理财通余额">
-                  0.**
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="可信地">
-                  德宏傣族景颇族白治州
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="账户绑定记录">
-                  <Button
-                    variant="text"
-                    theme="primary"
-                    onClick={() => {
-                      setBindDialogContent('账户绑定记录详细信息');
-                      setBindDialogVisible(true);
-                    }}
-                  >
-                    查看
-                  </Button>
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="微信支付账户类型">
-                  完整注册用户
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="微信常用设备">
-                  170DFA981916E09C9E50DFE560B3C635
-                </Descriptions.DescriptionsItem>
-                <Descriptions.DescriptionsItem label="账户类型">
-                  非III类账户
-                </Descriptions.DescriptionsItem>
-              </Descriptions>
-            </Card>
-          </UserInfoSection>
-
-          <RecordsSection>
-            <TabContainer>
-              <Button
-                variant={activeTab === "strategy" ? "outline" : "text"}
-                onClick={() => setActiveTab("strategy")}
-              >
-                策略记录
-              </Button>
-              <Button
-                variant={activeTab === "complaint" ? "outline" : "text"}
-                onClick={() => setActiveTab("complaint")}
-              >
-                投诉记录
-              </Button>
-              <Button
-                variant={activeTab === "transaction" ? "outline" : "text"}
-                onClick={() => setActiveTab("transaction")}
-              >
-                交易信息
-              </Button>
-            </TabContainer>
-
-            <Space direction="vertical" size="large" style={{ width: "100%" }}>
-              {[
-                { title: "管控信息", data: controlData },
-                { title: "管控信息历史记录", data: controlHistoryData },
-                { title: "交易风险限制入账信息", data: transactionRiskData },
-                {
-                  title: "交易风险限制入账历史记录",
-                  data: transactionRiskHistoryData,
-                },
-                {
-                  title: "交易风险干预信息",
-                  data: transactionInterventionData,
-                },
-                {
-                  title: "交易风险干预解除记录",
-                  data: transactionInterventionReleaseData,
-                },
-                { title: "交易风险S或Z干预信息", data: szInterventionData },
-                {
-                  title: "交易风险S或Z干预解除记录",
-                  data: szInterventionReleaseData,
-                },
-                { title: "交易风险W干预信息", data: wInterventionData },
-                {
-                  title: "交易风险W干预解除记录",
-                  data: wInterventionReleaseData,
-                },
-              ].map((section, index) => (
-                <Card key={index} bordered>
-                  <SectionTitle>
-                    <TitleIndicator />
-                    <Typography.Title level="h4">
-                      {section.title}
-                    </Typography.Title>
-                  </SectionTitle>
-
-                  <Table
-                    data={section.data.map((item) => ({
-                      ...item,
-                      value: (
-                        <ClickableCell
-                          onClick={() => {
-                            setModalContent(String(item.value));
-                            setModalOpen(true);
-                          }}
-                        >
-                          {item.value}
-                        </ClickableCell>
-                      ),
-                    }))}
-                    columns={columns}
-                    rowKey="id"
-                    size="medium"
-                    bordered
-                    stripe
-                  />
-
-                  <PaginationContainer>
-                    <Typography.Text style={{ color: '#6b7280' }}>共3条</Typography.Text>
-                    <Pagination
-                      total={3}
-                      pageSize={10}
-                      current={1}
-                      showPageSize={false}
-                      showJumper={true}
-                      size="small"
-                    />
-                  </PaginationContainer>
-                </Card>
-              ))}
-            </Space>
-          </RecordsSection>
-        </Frame1000005539>
-      </Frame1000005538>
-        </RootWrapperNaN>
+    <>
+    <div>1212121</div>
+    <div>1212121</div>
+    <div>1212121</div>
+    <div>1212121</div>
+    <div>1212121</div>
+    <div>1212121</div>
+    <div>1212121</div>
+    <div>1212121</div>
+    <div>1212121</div>
         <Dialog
           visible={modalOpen}
           onClose={() => setModalOpen(false)}
@@ -223,14 +56,13 @@ const UserProfileCard = () => {
             </Button>
           </div>
         </Dialog>
-      </GlobalStyle>
-    );
+    </>);
 };
 
 export default UserProfileCard;
 
 // Styled components
-const RootWrapperNaN = styled.div`
+const RootWrapper: React.FC<React.PropsWithChildren<{}>> = styled.div`
   position: relative;
 `;
 
@@ -302,6 +134,7 @@ const PaginationContainer = styled.div`
   margin-top: 16px;
 `;
 
+{/* @ts-ignore */}
 const GlobalStyle = styled.div`
   table td {
     color: red;
