@@ -1,7 +1,44 @@
-#此项目需要在文件夹单独启动，因为需要使用webpack5，而主项目使用的webpack4
-注意事项：
-1.需要引入cdn文件，不然可能会报错
-2.import的docment组件需要根据文档，webpack4和webpack5版本有不同的引入方式
-3.官方文档分为page和docment两个api说明，注意props有部分需要传入到page而不是docment
-4.页面上可以出现canves和text两层pdf文件，原因是没有引入css样式，导致画布层与text层没有完全对其
-5.file的文件需要放在public目录下访问。使用import引入pdf可以存在loader错误或者pdf无法显示，原因未知。解决方式是pdf放入public
+# 项目名称
+
+## 简介
+本项目是一个基于 React 的前端应用，使用 TypeScript 进行开发，集成了 TDesign 组件库和 Emotion 样式库，提供了丰富的用户界面和交互功能。
+
+## 功能
+- 用户信息展示
+- 策略记录管理
+- 投诉记录查看
+- 交易信息管理
+
+## 技术栈
+- React
+- TypeScript
+- TDesign
+- Emotion
+
+## 安装与运行
+1. 安装依赖：
+   ```bash
+   yarn install
+   ```
+2. 启动项目：
+   ```bash
+   yarn start
+   ```
+
+## 目录结构
+```
+public/
+  index.html
+  manifest.json
+src/
+  App.tsx
+  index.tsx
+  components/
+  styles/
+```
+
+## 贡献
+欢迎提交 Issue 或 Pull Request 来改进本项目。
+
+## 许可证
+MIT License
