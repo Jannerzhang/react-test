@@ -11,6 +11,7 @@ import {
   Dialog,
 } from "tdesign-react";
 import "tdesign-react/es/style/index.css";
+import {UserProfileCard2} from "./test2";
 
 const UserProfileCard = () => {
   const [activeTab, setActiveTab] = useState("strategy");
@@ -21,6 +22,7 @@ const UserProfileCard = () => {
 
   return (
     <>
+        <UserProfileCard2/>
     <div>1212121</div>
     <div>1212121</div>
     <div>1212121</div>
